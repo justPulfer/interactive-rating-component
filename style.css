@@ -1,0 +1,86 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Overpass', sans-serif;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Main styling */
+
+:root {
+    /* font */
+    --font-size-paragraph : 15px;
+    --font-weight-regular : 400;
+    --font-weight-bold : 700;
+    
+    /* colors */
+    --primary-color-orange : hsl(25, 97%, 53%);
+    --neutral-color-white : hsl(0, 0%, 100%);
+    --accent-light-grey: hsl(217, 12%, 63%);
+    --accent-medium-grey: hsl(216, 12%, 54%);
+    --accent-dark-blue: hsl(213, 19%, 18%);
+    --accent-darker-blue :hsl(216, 12%, 8%);
+}
