@@ -32,14 +32,14 @@
         </p>
       </div>
       <div class="submit-component">
-        <ul id="rating">
-          <li><button class="rating-count">1</button></li>
-          <li><button class="rating-count">2</button></li>
-          <li><button class="rating-count">3</button></li>
-          <li><button class="rating-count">4</button></li>
-          <li><button class="rating-count">5</button></li>
+        <ul id="ratings">
+          <li><button class="rating-count-btn">1</button></li>
+          <li><button class="rating-count-btn">2</button></li>
+          <li><button class="rating-count-btn">3</button></li>
+          <li><button class="rating-count-btn">4</button></li>
+          <li><button class="rating-count-btn">5</button></li>
         </ul>
-        <button type="submit" class="btn-submit">Submit</button>
+        <button type="submit" class="btn-submit" id="submit-rating-btn">Submit</button>
       </div>
     </div>
     <!-- Rating state end -->
@@ -47,14 +47,15 @@
     <!-- Thank you state start -->
     <div class="thank-you-state hidden">
       <img src="./images/illustration-thank-you.svg" alt="thank you illustration">
-      <p class="selection-message">You selected <span id="rating-selected"></span> <!-- Add rating here --> out of 5</p>
+      <p class="selection-message">You selected <span id="rating-selected">5</span> <!-- Add rating here --> out of 5
+      </p>
 
       <div class="thank-you-message">
         <p>Thank you!</p>
         <p>We appreciate you taking the time to give a rating. If you ever need more support,
           don&#8217;t hesitate to get in touch!</p>
       </div>
-      <button class="btn-submit">Rate Again</button>
+      <button type="button" class="btn-submit" id="rate-again-btn">Rate Again</button>
     </div>
     <!-- Thank you state end -->
 
